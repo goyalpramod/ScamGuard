@@ -30,13 +30,13 @@ def create_test_from_permissions(permissions) -> list[str]:
         result.append(temp_arr[-1])
 
     with open("column_names", "rb") as fp:   # Unpickling
-    column_name = pickle.load(fp)
+        column_name = pickle.load(fp)
 
     d = pd.DataFrame(0, index=np.arange(1), columns=column_name)
 
     for permission in result: 
-    if permission in column_name:
-        d.at[0,"{}".format(permission)]=1
+        if permission in column_name:
+            d.at[0,"{}".format(permission)]=1
     
     return d
     
