@@ -13,6 +13,7 @@ ScamGuard uses multiple techniques to analyze the input app and provide a verdic
 - **APK Scan**: ScamGuard scans the permissions of the APK file and uses an Artificial Neural Network (ANN) model to determine if it is malware or not.
 - **Description Analysis**: The app description is run through a Long Short-Term Memory (LSTM) model to determine if the app may be fraudulent.
 - **App Logo and Name Analysis**: The app logo and name are compared against a database of similar logos and names to calculate a similarity score. If the score is above a certain threshold, the app is declared as a copy app.
+- **VirusTotal check**: An additional check is run on the apk via the VirusTotal API to check whether any malware may be present or not, It runs through multiple virus checks from various platforms present in VirusTotal
 
 ## Conclusion
 
