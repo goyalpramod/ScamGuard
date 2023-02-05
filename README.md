@@ -1,3 +1,7 @@
+Team Name - PASS </br>
+Problem Statement - Fraud App Detection
+
+
 # ScamGuard
 
 ScamGuard is a web application that helps users determine whether a given Android app is a scam or not. It takes in an APK file, app description, app logo, and app name as inputs and analyzes them to give a verdict on the app's authenticity.
